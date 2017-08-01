@@ -13,21 +13,14 @@ public class BubbleTea extends Drink implements PearlSelectable {
 
 	@Override
 	public void setPearl() {
-		System.out.println("ÆŞÀ» ¼±ÅÃÇÏ¼¼¿ä.(1. Å¸ÇÇ¿ÀÄ« ÆŞ, 2. ÄÚÄÚ ÆŞ, 3. Á©¸® ÆŞ, 4. ¾Ë·Î¿¡ ÆŞ)");
-		Scanner scanner = new Scanner(System.in);
-		int select = scanner.nextInt();
-		pearl = pearls[select-1];
-		
 	}
 
 	@Override
 	public String getPearl() {
-		return "ÆŞ : "+pearl;
 	}
 
 	@Override
 	public String toString() {
-		return super.toString()+"\t"+getPearl();
 	}
 
 	
